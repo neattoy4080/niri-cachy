@@ -141,7 +141,7 @@
         "on-click-middle": "close"
     },
     "custom/notification": {
-        "tooltip": false,
+        "tooltip-format": "Notifications",
         "format": "{icon}",
         "format-icons": {
             "notification": "󱅫",
