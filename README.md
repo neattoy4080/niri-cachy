@@ -177,3 +177,4 @@ systemctl --user add-wants niri.service syshud.service
 ## Credits
 
 - [Wallpapers](https://github.com/orangci/walls-catppuccin-mocha)
+- [GTK-Theme](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)
