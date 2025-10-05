@@ -77,7 +77,7 @@ layout {
 
     always-center-single-column
 
-    center-focused-column "never"
+    center-focused-column "on-overflow"
 
     preset-column-widths {
         proportion 0.33333
@@ -238,6 +238,7 @@ window-rule {
     match app-id=r#"^thunar$"# title="^Rename*"
     match app-id=r#"^Vivado$"# title="^win0$"
     match app-id=r#"^java$"# title="^Eclipse$"
+    match app-id=r#"^Eclipse$"# title="^Eclipse IDE Launcher $"
     open-floating true
 }
 
@@ -259,13 +260,14 @@ window-rule {
     match app-id=r#"^zed$"#
     match app-id=r#"^jetbrains-idea$"#
     match app-id=r#"^codium$"#
-    match app-id=r#"^kitty$"#
     match app-id=r#"^Vivado$"#
     match app-id=r#"^Vitis IDE$"#
+    match app-id=r#"^uv4.exe"#
+    match app-id=r#"^Eclipse$"#
     
     open-on-workspace "1"
     open-focused true
-    default-column-width {proportion 0.75;}
+    default-column-width {proportion 0.9;}
 }
 
 window-rule {
@@ -298,7 +300,8 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"kitty$"#
+    match app-id=r#"^kitty$"#
+    open-on-workspace "1"
     default-column-width {proportion 0.5;}
 }
 
