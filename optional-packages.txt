@@ -3,6 +3,6 @@ mugshot
 zen-browser-bin
 neovide
 neovim
-trash-cli
 ly
 gnome-tweaks
+gnome-shell

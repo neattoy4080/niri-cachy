@@ -53,7 +53,7 @@ sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/yay.git ~/yay
 cd ~/yay
 makepkg -si
-rm -rf ~/yay
+trash ~/yay
 ```
 
 ##### Install packages
@@ -90,6 +90,11 @@ cp -r ~/.dotfiles/bin/. ~/.local/share/bin
 fish_add_path -a ~/.local/share/bin
 ```
 
+##### Remove `~/.dotfiles`
+```fish
+trash ~/.dotfiles
+```
+
 > [!WARNING]
 > Some keybindings or systemd services may not work if `~/.local/share/bin` is not added to your `PATH` variable.
 
@@ -104,9 +109,12 @@ fish_add_path -a ~/.local/share/bin
 set-wallpaper ~/.config/niri/wallpaper.jpg
 ```
 
-#### Set GTK Theme
+#### Install & set GTK Theme
 ```fish
-gsettings set org.gnome.desktop.interface gtk-theme "'catppuccin-mocha-lavender-standard+default'"
+git clone https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme.git ~/themes
+bash ~/themes/themes/install.sh --tweaks macos float -t lavender -l
+gsettings set org.gnome.desktop.interface gtk-theme "'Catppuccin-Lavender-Dark'"
+trash ~/themes
 ```
 
 #### Customize `fish` shell
@@ -150,7 +158,7 @@ Custom unit files are stored in: `~/.config/systemd/user`
 | Service | Purpose |
 | - | - |
 | `auto-hide-waybar.service` | Auto hide waybar |
-| `check-updates.service` | Check updates and notify |
+| `check-updates.service` | Check updates and notify on startup |
 | `kdeconnect-indicator.service` | KDE Connect |
 | `niri-screen-time.service` | Screen Time |
 | `wlsunset.service` | Night Mode |

@@ -9,7 +9,6 @@ xwayland-satellite
 galculator
 blueman
 man
-gnome-shell
 network-manager-applet
 brightnessctl
 kdeconnect
@@ -21,8 +20,8 @@ syshud
 pamixer
 cliphist
 direnv
-catppuccin-gtk-theme-mocha
 xdg-desktop-portal-gnome
+trash-cli
 papirus-icon-theme
 xdg-desktop-portal-gtk
 polkit-kde-agent
