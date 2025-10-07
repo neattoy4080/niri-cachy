@@ -117,6 +117,12 @@ gsettings set org.gnome.desktop.interface gtk-theme "'Catppuccin-Lavender-Dark'"
 trash ~/themes
 ```
 
+#### Install & set Icon Theme
+```fish
+papirus-folders -C cat-latte-lavender --theme Papirus-Light
+gsettings set org.gnome.desktop.interface icon-theme "'Papirus-Light'"
+```
+
 #### Customize `fish` shell
 ```fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
