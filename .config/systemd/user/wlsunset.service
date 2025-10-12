@@ -4,5 +4,5 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=wlsunset -S 7:00 -s 19:00 -d 120
+ExecStart=wlsunset -S 7:00 -s 19:00 -d 120 -t 3000
 Restart=on-failure
