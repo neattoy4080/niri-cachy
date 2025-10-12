@@ -3,8 +3,9 @@
         "separator": " "
     },
     "logo": {
-        "source": "$HOME/.config/fastfetch/pngs/arch.png",
-        "height": 17,
+        "source": "$HOME/.config/fastfetch/pngs/niri.png",
+        "height": 16,
+        "width": 36,
         "padding": {
             "top": 0,
         }
