@@ -8,7 +8,7 @@ if [[ $count != 0 ]]; then
 	else
 		message="$count packages await your wisdom, Arch master"
 	fi
-	capture=$(fyi --expire-time=10000 --icon=.dotfiles/.config/fastfetch/pngs/arch.png --action=Update:Update "$message")
+	capture=$(fyi --expire-time=10000 --icon=$HOME/.config/fastfetch/pngs/arch.png --action=Update:Update "$message")
 	if [[ "$capture" == "action=Update" ]]; then
 		kitty -e yay -Syu
 	fi
