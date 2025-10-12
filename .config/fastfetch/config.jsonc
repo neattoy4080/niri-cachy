@@ -7,7 +7,7 @@
         "height": 16,
         "width": 36,
         "padding": {
-            "top": 0,
+            "top": 1,
         }
     },
     "modules": [
