@@ -38,6 +38,7 @@ swayidle
 swaybg
 fastfetch
 eza
+fisher
 thunar
 mpv
 bat

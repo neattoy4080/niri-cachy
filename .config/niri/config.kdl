@@ -1,6 +1,9 @@
 environment {
     DISPLAY ":0"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    // QT_STYLE_OVERRIDE "kvantum"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
 }
 
 cursor {
@@ -344,6 +347,7 @@ binds {
     Mod+F4          hotkey-overlay-title="Open OBS Studio: obs"                     repeat=false    { spawn "obs"; }
     Mod+T           hotkey-overlay-title="Open a Terminal: kitty"                   repeat=false    { spawn "kitty"; }
     Mod+O           hotkey-overlay-title="Toggle Overview Mode"                     repeat=false    { toggle-overview; }
+    Mod+M           hotkey-overlay-title="System Menu"                            repeat=false    { spawn "bash" "-c" "pkill fuzzel || system-menu"; }
 
     XF86Calculator          hotkey-overlay-title="Open Calculator: galculator"                          repeat=false    { spawn "galculator"; }
     XF86AudioRaiseVolume    hotkey-overlay-title="Increase Volume"              allow-when-locked=true                  { spawn "pamixer" "--allow-boost" "--set-limit" "120" "--increase" "5"; }

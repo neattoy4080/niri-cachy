@@ -53,7 +53,7 @@ sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/yay.git ~/yay
 cd ~/yay
 makepkg -si
-trash ~/yay
+rm -rf ~/yay
 ```
 
 ##### Install packages
@@ -125,7 +125,6 @@ gsettings set org.gnome.desktop.interface icon-theme "'Papirus-Light'"
 
 #### Customize `fish` shell
 ```fish
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 fisher install IlanCosman/tide@v6
 ```
 
