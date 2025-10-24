@@ -36,3 +36,7 @@ function fish_command_not_found
         echo "Command '$argv' not found and 'yay' is not installed."
     end
 end
+
+if test -f /opt/miniconda3/etc/fish/conf.d/conda.fish
+    source /opt/miniconda3/etc/fish/conf.d/conda.fish
+end
