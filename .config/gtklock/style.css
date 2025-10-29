@@ -21,15 +21,13 @@ window {
     font-size: 64px;
     font-weight: 600;
     color: #cdd6f4;
-    margin: 0;
-    padding: 0;
     letter-spacing: 1px;
 }
 
 #date-label {
     font-size: 20px;
     color: #a6adc8;
-    margin-top: 2px;
+    margin-bottom: 10px;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
